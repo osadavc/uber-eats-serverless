@@ -23,7 +23,7 @@ const createPaymentIntent = async (req, res) => {
     });
 
     res.json({
-      clientSecret: paymentIntent.clientSecret,
+      clientSecret: paymentIntent.client_secret,
     });
   } catch (error) {
     res.json({
